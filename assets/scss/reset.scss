@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  // Font
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-white-000;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#222c31, #111d32);
+  min-height: 100vh;
+}
+
+li, ul, ol {
+  list-style: none;
+}
