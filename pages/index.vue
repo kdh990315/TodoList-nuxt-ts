@@ -4,7 +4,7 @@
 			<h1>Ready for a challenge?</h1>
 			<div class="intro-header_content_btn-container">
 				<BaseButton :link="true" url="/TodoMain">시작하기</BaseButton>
-				<BaseButton :link="true" url="/">로그인하기</BaseButton>
+				<BaseButton :link="true" url="/auth">로그인하기</BaseButton>
 			</div>
 			<small>로그인을 하지 않아도 정상 작동되지만 데이터가 소실될 수 있습니다.</small>
 		</div>
