@@ -6,6 +6,8 @@
 
 
 <script setup lang="ts">
+import { useAuthStore } from './store/authStore';
+
 interface MetaObject {
   title?: string;
   meta?: {
@@ -28,5 +30,11 @@ useHead<MetaObject>({
     { hid: 'twitter:image', name: 'twitter:image', content: '/assets/images/mainpage.png' },
     { name: 'keywords', content: 'TodoList, 할 일 관리, 일정, 일정 관리, Nuxt.js'}
   ],
+});
+
+const AuthStore = useAuthStore();
+
+onMounted(() => {
+  AuthStore.autoLogin();
 })
 </script>
